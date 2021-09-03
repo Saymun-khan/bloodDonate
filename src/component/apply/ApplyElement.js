@@ -8,10 +8,7 @@ export const Applys = styled.div`
     margin-top: 30px;
     border-radius: 5px;
     @media only screen and (max-width: 728px) {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        
+        width: 100%;
     
     }
 `
@@ -23,8 +20,7 @@ export const Announce = styled.div`
     margin:auto;
     background-color: #e01067;
     @media only screen and (max-width: 728px) {
-        margin-left: 50px;
-        height: auto;
+        display: none;
     
     }
 `
@@ -36,13 +32,17 @@ export const FormDiv = styled.div`
     margin: 20px;
     background-color: #06041c;
     @media only screen and (max-width: 728px) {
-        width: 40%;
+        width: 90%;
     
     }
 `
 export const InputBox = styled.div`
     padding: 10px;
     margin: 15px;
+    @media only screen and (max-width: 728px) {
+        margin: 10px;
+    
+    }
 `
 export const InputHeader = styled.p`
     font-size: 16px;
@@ -61,7 +61,7 @@ export const Input = styled.input`
         outline: none;
     }
     @media only screen and (max-width: 728px) {
-        width: 20rem;
+        width: 95%;
     
     }
 `
@@ -77,6 +77,10 @@ export const InputSubmitButton = styled.button`
     margin-bottom: 15px;
     margin-left: 30px;
     cursor: pointer;
+    @media only screen and (max-width: 728px) {
+        width: 75%;
+    
+    }
 `
 export const AnnounceMsg = styled.div`
     font-size: 25px;

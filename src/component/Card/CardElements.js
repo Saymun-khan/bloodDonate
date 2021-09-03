@@ -7,6 +7,11 @@ export const Cards = styled.div`
             border-radius: 5px;
             color: white;
             margin:25px;
+            @media only screen and (max-width:728px){
+        margin-left: 0;
+        margin-top: 5px;
+        width: 90%;
+    }
 `
 export const CardContent = styled.div`
             justify-content: center;

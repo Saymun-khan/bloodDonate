@@ -1,7 +1,18 @@
 import styled from "styled-components";
 
+
+export const SearchWrapper = styled.div`
+    margin-top: 65px;
+    margin-left: 55px;
+    display: flex;
+    @media only screen and (max-width:728px){
+        margin-left: 0;
+        margin-top: 5px;
+        width: 85%;
+    }
+`
 export const SearchInput = styled.input`
-    width:18rem;
+    width:100%;
     height: 2.1rem;
     background-color: #fff;
     color: #13141c;

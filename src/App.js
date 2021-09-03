@@ -9,6 +9,8 @@ import Skeleton from './component/skeletonComponent/ske'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import db from './firebase'
 import { useState, useEffect } from 'react'
+import { SearchBar } from './appElement'
+
 function App() {
   const Cardin = {
     display: "flex",
@@ -42,10 +44,10 @@ function App() {
 
       <div style={{ backgroundColor: "#8dd7f0" }}>
         <Header />
-        <div style={{ display: "flex", marginLeft: "45px", flexWrap: "wrap" }}>
+        <SearchBar>
           <Search placeholder="রক্তের গ্রুপ অনুসারে খুজুন..." searchfunc={searchTerm} setsearchfunc={setsearchTerm} searchHandler={searchHandler} />
           <Search placeholder="উপজেলা বা ইউনিয়নের নাম অনুসারে খুজুন..." searchfunc={searchTerm} setsearchfunc={setsearchTerm} searchHandler={searchHandler} />
-        </div>
+        </SearchBar>
         <Router>
           <Switch>
             <Route exact path="/">
@@ -86,6 +88,7 @@ function App() {
             </Route>
           </Switch>
         </Router>
+
       </div>
 
 

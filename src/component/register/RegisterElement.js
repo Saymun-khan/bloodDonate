@@ -9,11 +9,7 @@ export const Applys = styled.div`
     border-radius: 5px;
     flex-wrap: wrap;
     @media only screen and (max-width: 728px) {
-                
-                display: flex;
-                flex-direction: column;
-                
-
+          width: 100%;
             }
 `
 export const Announce = styled.div`
@@ -24,6 +20,9 @@ export const Announce = styled.div`
     margin: 20px;
     background-color: #050818;
     text-transform: capitalize;
+    @media only screen and (max-width: 728px) {
+                display: none;
+            }
 `
 export const FormDiv = styled.div`
     width: 55%;
@@ -33,10 +32,10 @@ export const FormDiv = styled.div`
     margin: 20px;
     background-color: #14b388;
     @media only screen and (max-width: 728px) {   
-            width: 39%;
+            width: 90%;
             }
     @media only screen and (max-width: 550px) {   
-            width: 35%;
+            width: 90%;
     }
 `
 export const InputBox = styled.div`
@@ -67,7 +66,7 @@ export const Input = styled.input`
 `
 export const InputSubmitButton = styled.button`
     background-color: aqua;
-    border: 1px solid red;
+    border: 1px solid #121212;
     font-weight: 500;
     font-size: 20px;
     outline: none;
@@ -77,6 +76,11 @@ export const InputSubmitButton = styled.button`
     margin-bottom: 15px;
     margin-left: 30px;
     cursor: pointer;
+    @media only screen and (max-width: 728px) {
+                
+                width: 65%;
+
+            }
 `
 export const AnnounceMsg = styled.div`
     font-size: 25px;
